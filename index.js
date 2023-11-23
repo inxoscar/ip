@@ -1,5 +1,6 @@
 // Add Express
 const express = require("express");
+const PORT = process.env.PORT || 3030;
 
 // Initialize Express
 const app = express();
@@ -22,6 +23,6 @@ app.get("/ip", function (req, res) {
 });
 
 // Initialize server
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
+app.listen(PORT, () => {
+  console.log(`Running on port ${PORT}.`);
 });
